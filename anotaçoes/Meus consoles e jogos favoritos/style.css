@@ -2,11 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
 
 :root {
     --cor1: #ADD9D1;
     --cor2: #027373;
     --fonte-titulo: 'Yanone Kaffeesatz', sans-serif;
+    --fonte-texto: 'Kdam Thmor Pro', sans-serif;
 }
 
 * {
@@ -14,10 +17,35 @@
     padding: 0px;
 }
 
-nav { background-color: var(--cor1);
+
+
+    
+
+ header { background-color: var(--cor1);
     margin: auto;
     padding: 40px;
 }
+
+   nav {
+    background-color: var(--cor1);
+    
+   }
+
+   nav a {
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    font-family: var(--fonte-texto);
+   }
+
+   nav a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+   }
 
 h1 {
     font-family: var(--fonte-titulo);
