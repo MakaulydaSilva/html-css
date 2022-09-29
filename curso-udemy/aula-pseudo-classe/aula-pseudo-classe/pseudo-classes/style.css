@@ -1,0 +1,67 @@
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+.heading:hover {
+    background-color: red;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link {  /*Cor de links nunca visitados*/
+    color: deeppink;
+}
+
+a:visited {  /*Cor de links que foram visitados*/
+    color: firebrick;
+}
+
+a:hover {
+    background: darkblue;
+    text-decoration: none;
+    color: white;
+}
+
+a:active {     /*Siginifica que o elemento foi clicado, que ele esta ativo*/
+    background: darkslategray;
+    text-decoration: none;
+    color: white;
+}
+
+/*
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    background-color: purple;
+    cursor: not-allowed;
+}
+*/
+
+input:checked + p {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.pai .lista li:last-child {
+    background: red;
+}
+
+.pai .lista li:first-child {
+    background: brown;
+}
+
+input:required {
+    background: yellow;
+}
