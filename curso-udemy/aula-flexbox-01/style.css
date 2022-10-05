@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+   display: flex; /*block*/
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   flex-flow: row nowrap;
+   background: yellow;
+   height: 800px;
+}
+
+.flex-item {
+    /* flex-grow: 1;
+    flex-basis: 320px;
+    flex-shrink: 1; */
+    /*short-hand*/
+    /* flex: 1 1 320px; */
+    width: 100%;
+    color: white;
+    background: red;
+}
+
+.flex-item:nth-child(1) {
+    order: 1;
+}
+
+.flex-item:nth-child(2) {
+    order: -1;
+}
