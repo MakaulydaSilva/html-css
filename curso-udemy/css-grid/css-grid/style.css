@@ -14,11 +14,8 @@ body {
     margin: 0 auto;
     display: grid;
     /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
-    grid-template-columns: [um] 1fr [dois] 1fr [tres] 1fr [quatro];
-    grid-template-rows: [um] 1fr [dois] 1fr [tres] 1fr [quatro];
-    /* gap: 30px; */
-    row-gap: 30px;
-    column-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
 }
 
 .grid div {
@@ -28,11 +25,8 @@ body {
 
 .grid div:nth-child(5) {
     background: darkred;
-   /* grid-column-start: um;
-   grid-column-end: quatro ; */
-   /* grid-column: um / quatro;
-   grid-row: dois / tres; */
-   grid-area: um / dois / quatro / tres;
+    grid-row: span 1;
+    grid-column: span 2;
 }
 
 @media (max-width: 768px) {
